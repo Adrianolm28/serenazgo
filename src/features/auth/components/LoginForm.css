@@ -1,0 +1,116 @@
+.login-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../../assets/background.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  z-index: 10;
+}
+
+.logo-container {
+  margin-bottom: 40px;
+}
+
+.nexo-logo {
+  width: 180px;
+  height: auto;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  color: #93c5fd;
+  display: flex;
+  align-items: center;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 14px 14px 48px;
+  background-color: rgba(29, 78, 216, 0.3);
+  border: 1px solid rgba(147, 197, 253, 0.4);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #cbd5e1;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6;
+  background-color: rgba(29, 78, 216, 0.5);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(29, 78, 216, 0.4);
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  box-shadow: 0 6px 20px rgba(29, 78, 216, 0.6);
+}
+
+.error-message {
+  color: #f87171;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .login-content {
+    padding: 15px;
+  }
+  .nexo-logo {
+    width: 140px;
+  }
+  .input-group input,
+  .login-button {
+    padding: 12px 12px 12px 42px;
+    font-size: 14px;
+  }
+}
